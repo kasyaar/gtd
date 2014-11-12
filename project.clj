@@ -14,8 +14,8 @@
               :builds [{:id "dev"
                         :source-paths ["src/cljs"]
                         :compiler {
-                                   :output-to "public/script/main.js"
-                                   :optimizations :wnohitespace
+                                   :output-to "resources/public/script/main.js"
+                                   :optimizations :whitespace
                                    :pretty-print true}}]}
   :dependencies [
                  [http-kit "2.1.16"]
@@ -25,6 +25,12 @@
                  [org.clojure/clojurescript "0.0-2322"]
                  [org.clojure/core.async "0.1.267.0-0d7780-alpha"]
                  [om "0.7.1"]
-                 [prismatic/dommy "1.0.0"]]
+                 [prismatic/dommy "1.0.0"]
+                 [clj-oauth "1.5.1"]
+                 [twitter-api "0.7.7"]
+                 [hbs "0.6.0"]
+                 [com.ashafa/clutch "0.4.0"]
+                 [cheshire "5.3.1"]
+                 ]
 
   :min-lein-version "2.0.0")
